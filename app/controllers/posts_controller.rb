@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 #@postにpostsテーブルの全ての情報を代入している
     @posts = Post.includes(:user)
   end
-
+dd
   def new #ルーティング、コントローラーの処理が終わったので、次はビューファイルへ
     @post = Post.new#インスタンスを生成
   end
